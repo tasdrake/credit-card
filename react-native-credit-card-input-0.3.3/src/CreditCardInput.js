@@ -11,7 +11,7 @@ import ReactNative, {
 import CreditCard from "./CardView";
 import CCInput from "./CCInput";
 import { InjectedProps } from "./connectToState";
-import colors from '../../config/colors';
+// import colors from '../../config/colors';
 
 const s = StyleSheet.create({
   container: {
@@ -84,7 +84,7 @@ export default class CreditCardInput extends Component {
     },
     inputContainerStyle: {
       borderBottomWidth: 1,
-      borderBottomColor: colors.yellow,
+      borderBottomColor: '#f4e375',
     },
     validColor: "",
     invalidColor: "red",
