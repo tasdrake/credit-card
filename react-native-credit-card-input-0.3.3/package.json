@@ -1,7 +1,6 @@
 {
-  "name": "react-native-credit-card-input",
-  "version": "0.3.3",
-  "description": "React native credit card input component",
+  "name": "tasman-credit-card-input",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,29 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sbycrosz/react-native-credit-card-input.git"
+    "url": "https://github.com/tasmandrake/credit-card.git"
   },
-  "keywords": [
-    "react-native",
-    "ios",
-    "android",
-    "credit-card",
-    "credit-card input",
-    "skeuomorphic credit-card",
-    "form",
-    "flip",
-    "card",
-    "input",
-    "component",
-    "react-component",
-    "react-native-component"
-  ],
-  "author": "sbycrosz",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sbycrosz/react-native-credit-card-input/issues"
-  },
-  "homepage": "https://github.com/sbycrosz/react-native-credit-card-input#readme",
+  "author": "Tasman Drake",
   "dependencies": {
     "card-validator": "^3.0.0",
     "react-native-flip-card": "^3.3.0",
