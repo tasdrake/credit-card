@@ -157,41 +157,31 @@ export default class CreditCardInput extends Component {
             cvc={cvc}
             email = {email}
              />
-               <Text>{'\n'}</Text>
         <ScrollView ref="Form"
-
+            horizontal
             keyboardShouldPersistTaps='always'
             scrollEnabled={allowScroll}
             showsHorizontalScrollIndicator={false}
             style={s.form}>
-            <ScrollView horizontal>
-
-              <CCInput {...this._inputProps("number")}
-                containerStyle={[s.inputContainer, inputContainerStyle, { width: 214 }]} />
-                <CCInput {...this._inputProps("expiry")}
-                  containerStyle={[s.inputContainer, inputContainerStyle, { width: 214 }]} />
-                  { requiresCVC &&
-                    <CCInput {...this._inputProps("cvc")}
-                      containerStyle={[s.inputContainer, inputContainerStyle, { width: 214 }]} /> }
-                      { requiresPostalCode &&
-                        <CCInput {...this._inputProps("postalCode")}
-                          containerStyle={[s.inputContainer, inputContainerStyle, { width: 214 }]} /> }
-            </ScrollView>
-              <Text>{'\n'}</Text>
-              <Text>{'\n'}</Text>
-            <ScrollView horizontal>
-
-              { requiresName &&
-                <CCInput {...this._inputProps("name")}
-                  keyboardType="default"
-                  containerStyle={[s.inputContainer, inputContainerStyle, { width: 450 }]} /> }
-                  { requiresEmail &&
-                    <CCInput {...this._inputProps("email")}
-                      keyboardType="default"
-                      containerStyle={[s.inputContainer, inputContainerStyle, { width: 450 }]} /> }
-            </ScrollView>
+          <CCInput {...this._inputProps("number")}
+              containerStyle={[s.inputContainer, inputContainerStyle, { width: 225 }]} />
+          <CCInput {...this._inputProps("expiry")}
+              containerStyle={[s.inputContainer, inputContainerStyle, { width: 225 }]} />
+          { requiresCVC &&
+            <CCInput {...this._inputProps("cvc")}
+                containerStyle={[s.inputContainer, inputContainerStyle, { width: 225 }]} /> }
+          { requiresPostalCode &&
+            <CCInput {...this._inputProps("postalCode")}
+                containerStyle={[s.inputContainer, inputContainerStyle, { width: 225 }]} /> }
+          { requiresName &&
+            <CCInput {...this._inputProps("name")}
+            keyboardType="default"
+            containerStyle={[s.inputContainer, inputContainerStyle, { width: 400 }]} /> }
+          { requiresEmail &&
+            <CCInput {...this._inputProps("email")}
+                keyboardType="default"
+                containerStyle={[s.inputContainer, inputContainerStyle, { width: 400 }]} /> }
         </ScrollView>
-          <Text>{'\n'}</Text>
       </View>
     );
   }
