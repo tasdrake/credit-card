@@ -1,5 +1,5 @@
 import valid from "card-validator";
-import { removeNonNumber, removeLeadingSpaces } from "./Utilities";
+import { removeNonNumber, removeLeadingSpaces, removeSpaces } from "./Utilities";
 import pick from "lodash.pick";
 
 const limitLength = (string = "", maxLength) => string.substr(0, maxLength);
@@ -54,7 +54,7 @@ export default class CCFieldFormatter {
   };
 
   _formatEmail = (email) => {
-    const cleaned = removeLeadingSpaces(email);
+    const cleaned = removeSpaces(email);
     return cleaned;
   }
 }

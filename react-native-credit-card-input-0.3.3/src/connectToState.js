@@ -46,6 +46,7 @@ export default function connectToState(CreditCardInput) {
                "incomplete";
       },
       validateEmail: (email = "") => {
+        email.replace(/\s/g, "")
         return email.includes('@') ? "valid" :
                email.includes('.') ? "valid" :
                "incomplete";
