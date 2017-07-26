@@ -44,13 +44,13 @@ const s = StyleSheet.create({
     fontSize: 21,
     position: "absolute",
     top: 95,
-    left: 28,
+    left: 20,
   },
   name: {
     fontSize: 16,
     position: "absolute",
     bottom: 20,
-    left: 25,
+    left: 20,
     right: 100,
   },
   expiryLabel: {
