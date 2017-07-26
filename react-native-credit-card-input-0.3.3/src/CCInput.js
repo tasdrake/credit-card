@@ -9,7 +9,7 @@ import {
 
 const s = StyleSheet.create({
   baseInputStyle: {
-    color: "black",
+    color: "white",
   },
 });
 
@@ -43,7 +43,9 @@ export default class CCInput extends Component {
     keyboardType: "numeric",
     containerStyle: {},
     inputStyle: {},
-    labelStyle: {},
+    labelStyle: {
+      color: "#f4e375"
+    },
     onFocus: () => {},
     onChange: () => {},
     onBecomeEmpty: () => {},
@@ -71,7 +73,7 @@ export default class CCInput extends Component {
       <TouchableOpacity onPress={this.focus}
           activeOpacity={0.99}>
         <View style={[containerStyle]}>
-          { !!label && <Text style={[labelStyle]}>{label}</Text>}
+          { !!label && <Text style={{color: "#f4e375"}}>{label}</Text>}
           <TextInput ref="input"
               keyboardType={keyboardType}
               autoCapitalise="words"
@@ -84,7 +86,7 @@ export default class CCInput extends Component {
                  {}),
               ]}
               underlineColorAndroid={"transparent"}
-              placeholderTextColor={placeholderColor}
+              placeholderTextColor={"rgba(255, 255, 255, 0.8)"}
               placeholder={placeholder}
               value={value}
               onFocus={this._onFocus}
